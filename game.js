@@ -26,9 +26,9 @@ if(q3.toUpperCase() === "YES" || q3.toUpperCase() === "Y"){
 	alert('Wrong, just go home...');
 }
 
-document.write("You got " + numCorrect + " out of 3 questions right");
+alert("You got " + numCorrect + " out of 3 questions right. Thanks for playing!");
 
-alert("Your answer to question 1 is: " + q1);
-alert("Your answer to question 2 is: " + q2);
-alert("Your answer to question 3 is: " + q3);
+//alert("Your answer to question 1 is: " + q1);
+//alert("Your answer to question 2 is: " + q2);
+//alert("Your answer to question 3 is: " + q3);
 
