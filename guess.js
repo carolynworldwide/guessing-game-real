@@ -23,4 +23,3 @@ alert("Your answer to question 1 is: " + q1);
 alert("Your answer to question 2 is: " + q2);
 alert("Your answer to question 3 is: " + q3);
 
-//BITCHTITTIES////
