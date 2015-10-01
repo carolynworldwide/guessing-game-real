@@ -1,6 +1,9 @@
 var numCorrect = 0;
 
-
+var elOne = document.getElementById("one");
+var elTwo = document.getElementById("two");
+var elThree = document.getElementById("three");
+var elResults = document.getElementById("results");
 
 
 function question1() {
@@ -10,9 +13,9 @@ function question1() {
 
 	if(q1.toUpperCase() === "YES" || q1.toUpperCase() === "Y") {
 		numCorrect++;
-		alert('Correct! Of course I love pizza!');
+		elOne.textContent=('Correct! Of course I love pizza!');
 	} else {
-		alert('Wrong, I actually like pizza of all sorts.');
+		elOne.textContent=('Wrong, I actually like pizza of all sorts.');
 	}
 }
 
@@ -23,9 +26,9 @@ function question2() {
 
 	if(q2.toUpperCase() === "YES" || q2.toUpperCase() === "Y"){
 		numCorrect++;
-		alert('Correct! I\'m a beeraholic!');
+		elTwo.textContent=('Correct! I\'m a beeraholic!');
 	} else {
-		alert('Wrong, who doesn\'t love a good brew?');
+		elTwo.textContent=('Wrong, who doesn\'t love a good brew?');
 	}
 	
 }
@@ -37,9 +40,9 @@ function question3() {
 
 	if(q3.toUpperCase() === "YES" || q3.toUpperCase() === "Y"){
 		numCorrect++;
-		alert('Correct! Let\'s go!');
+		elThree.textContent=('Correct! Let\'s go!');
 	} else {
-		alert('Wrong, just go home...');
+		elThree.textContent=('Wrong, just go home...');
 	}	
 }
 
@@ -48,4 +51,4 @@ question2();
 question3();
 
 
-alert("You got " + numCorrect + " out of 3 questions right. Thanks for playing!");
+elResults.textContent=("You got " + numCorrect + " out of 3 questions right. Thanks for playing!");
