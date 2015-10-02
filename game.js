@@ -4,10 +4,11 @@ var elOne = document.getElementById("one");
 var elTwo = document.getElementById("two");
 var elThree = document.getElementById("three");
 var elResults = document.getElementById("results");
-
+var questions = ["Do I like pizza?", "Do I like beer?", "Did it occur to me just now that I should leave what I'm doing and go get pizza and beer?"];
+var answers = ["YES", "Y", "NO", "N"];	
 
 function question1() {
-	var q1 = prompt("Do I like pizza? (yes or no)");
+	var q1 = prompt("Do I like pizza?");
 
 	console.log(q1);
 
@@ -20,7 +21,7 @@ function question1() {
 }
 
 function question2() {
-	var q2 = prompt("Do I like beer? (yes or no)");
+	var q2 = prompt("Do I like beer?");
 
 	console.log(q2);
 
@@ -34,7 +35,7 @@ function question2() {
 }
 
 function question3() {
-	var q3 = prompt("Did it occur to me just now that I should leave what I'm doing and go get pizza and beer? (yes or no)");
+	var q3 = prompt("Did it occur to me just now that I should leave what I'm doing and go get pizza and beer?");
 
 	console.log(q3);
 
