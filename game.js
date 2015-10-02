@@ -17,8 +17,10 @@ function question1() {
 	if(q1.toUpperCase() === "YES" || q1.toUpperCase() === "Y") {
 		numCorrect++;
 		elImg1.innerHTML = ("<img src='images/success-kid.png' />");
-		elOne.textContent=('Correct! Of course I love pizza!');
+		elOne.className = ('correct');
+		elOne.textContent = ('Correct! Of course I love pizza!');
 	} else {
+		elOne.className = ('incorrect');
 		elOne.textContent=('Wrong, I actually like pizza of all sorts.');
 	}
 }
@@ -31,11 +33,13 @@ function question2() {
 	if(q2.toUpperCase() === "YES" || q2.toUpperCase() === "Y"){
 		numCorrect++;
 		elImg2.innerHTML = ("<img src='images/success-rice.jpg' />");
+		elTwo.className = ('correct');
 		elTwo.textContent=('Correct! I\'m a beeraholic!');
 	} else {
+		elTwo.className = ('incorrect');
 		elTwo.textContent=('Wrong, who doesn\'t love a good brew?');
 	}
-	
+
 }
 
 function question3() {
@@ -46,8 +50,10 @@ function question3() {
 	if(q3.toUpperCase() === "YES" || q3.toUpperCase() === "Y"){
 		numCorrect++;
 		elImg3.innerHTML = ("<img src='images/success-Colbert.gif-c200' />");
+		elThree.className = ('correct');
 		elThree.textContent=('Correct! Let\'s go!');
 	} else {
+		elThree.className = ('incorrect');
 		elThree.textContent=('Wrong, just go home...');
 	}	
 }
